@@ -223,7 +223,7 @@ void shortsPath_cmd(pnode head){
     scanf("%d %d", &start_index, &end_index) ;
     pnode start_node = find_node(head, start_index) ;
     pnode end_node = find_node(head, end_index) ;
-    printf("Dijsktra shortest path: %d\n",find_min_path(head, start_node, end_node)) ;
+    printf("Dijsktra shortest path: %d \n",find_min_path(head, start_node, end_node)) ;
 }
 
 //-----Find the shortest path between a group of nodes, the node numbers are being scanned from the user-----
@@ -241,7 +241,7 @@ void TSP_cmd(pnode head){
 
     //-----Calling TSP function of algo.c-----
     int min_path = TSP(head, nodes, k) ;
-    printf("TSP shortest path: %d\n", min_path) ;
+    printf("TSP shortest path: %d \n", min_path) ;
     free(nodes) ;
 }
 
